@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+
+:root {
+  --fuente-letra: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fuente-letra);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  border: 0.1px solid transparent;
+  font-family: inherit;
+}
+
+.texto {
+  display: block;
+  font-family: var(--fuente-letra);
+  margin: auto;
+  text-align: center;
+}
+
+#titulo {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#contador {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+#contenedor {
+  width: 500px;
+  height: 530px;
+  margin: auto;
+}
+
+#marcador {
+  height: 15%;
+  border: 0.1px solid transparent;
+  background-color: #414535;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+
+#operacion {
+  height: 85%;
+  background-color: #618985;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 0.1px solid transparent;
+}
+
+hr {
+  color: white;
+}
+
+#suma {
+  display: block;
+  width: 80%;
+  height: 95%;
+  margin: auto;
+}
+
+#elementos-suma {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: flex-start;
+}
+
+#digitoUno,
+#digitoDos,
+#digitoTres,
+#digitoCero {
+  width: 80%;
+  display: block;
+  margin: 10px 0;
+  margin-left: auto;
+}
+
+#digitoResultado {
+  width: 50%;
+  height: 15%;
+  margin-left: 36%;
+}
+
+.numeros-ayuda {
+  color: #fff;
+  background-color: #949798;
+}
+
+.numeros-resultado {
+  background-color: #414535;
+  color: #fff;
+}
+
+#mensajeRespuesta {
+  display: block;
+  height: 10%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+#espacio-operador {
+  width: 20%;
+  height: 100%;
+}
+
+#operador {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#numeros {
+  width: 80%;
+  height: 100%;
+}
+
+.digito {
+  width: 400px;
+}
+
+.elemento {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.celda {
+  align-items: flex-end;
+}
+
+#botones {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.boton {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#btn-validar {
+  display: block;
+  border: none;
+  width: 100%;
+  margin: auto;
+  font-weight: bold;
+}
+
+#btn-validar:hover {
+  background-color: rgb(42, 41, 41);
+  transition: 600ms;
+}
+
+.enlace {
+  font-family: var(--fuente-letra);
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  #titulo {
+    font-size: 20px;
+  }
+
+  #contenedor {
+    width: 330px;
+    height: 530px;
+    margin: auto;
+  }
+
+  #suma {
+    width: 100%;
+    height: 95%;
+    margin: auto;
+  }
+
+  #digitoResultado {
+    width: 60%;
+    height: 15%;
+    margin-left: 36%;
+  }
+}
