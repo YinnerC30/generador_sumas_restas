@@ -3,6 +3,20 @@ let numeroUno, numeroDos, numeroTres, resultadoDigitado, respuestaCorrecta;
 generarResta();
 var puntaje = 1;
 //Obtengo los elementos html
+
+function obtenerceldaVacia1() {
+    return document.getElementById("celdaVacia1");
+}
+
+function obtenerceldaVacia2() {
+    return document.getElementById("celdaVacia2");
+}
+
+function obtenerceldaVacia3() {
+    return document.getElementById("celdaVacia3");
+}
+
+
 function obtenerCelda1() {
     return document.getElementById("celda1");
 }
@@ -143,5 +157,66 @@ function limpiarEntradas() {
     obtenerCelda12().value = "";
     document.getElementById("celdaVacia1").value = "";
     document.getElementById("celdaVacia2").value = "";
+    document.getElementById("celdaVacia3").value = "";
+    destacharCeldas();
     obtenerCelda12().focus();
+}
+
+function tacharCelda1() {
+    obtenerCelda1().style = `
+        background-color: #618985;
+        text-decoration: line-through;
+        `
+}
+
+function tacharCelda2() {
+    obtenerCelda2().style = `
+    background-color: #618985;
+    text-decoration: line-through;
+    `
+}
+
+function tacharCelda3() {
+    obtenerCelda3().style = `
+    background-color: #618985;
+    text-decoration: line-through;
+    `
+}
+
+
+function validarCelda1() {
+    if (obtenerceldaVacia1().value.trim() == "") {
+        obtenerCelda1().style = `
+        background-color: white;
+        text-decoration: none;`
+    }
+}
+
+function validarCelda2() {
+    if (obtenerceldaVacia2().value.trim() == "") {
+        obtenerCelda2().style = `
+        background-color: white;
+        text-decoration: none;`
+    }
+}
+
+function validarCelda3() {
+    if (obtenerceldaVacia3().value.trim() == "") {
+        obtenerCelda3().style = `
+        background-color: white;
+        text-decoration: none;`
+    }
+}
+
+function destacharCeldas() {
+    obtenerCelda1().style = `
+        background-color: white;
+        text-decoration: none;`
+    obtenerCelda2().style = `
+        background-color: white;
+        text-decoration: none;`
+    obtenerCelda3().style = `
+        background-color: white;
+        text-decoration: none;`
+
 }
